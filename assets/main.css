@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+.container
+{
+position: relative;
+width: 100%;
+max-width: 1000px;
+min-height: 1000px;
+background: rgb(184, 8, 8);
+margin: 50px;
+display: grid;
+grid-template-columns: 1fr 2fr;
+box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left-sider
+{
+    position: relative;
+    background: #ececec;
+    padding: 40px;
+
+}
+.profileText
+{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+.imgBx
+{
+position: relative;
+width: 200px;
+height: 200px;
+border-radius: 50px;
+overflow: hidden;
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo
+{
+padding-top: 40px;
+}
+.title
+{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+.contactInfo ul li span
+{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+.contactInfo .text
+{
+    font-size: 13px;
+}
+
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5
+{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2)
+{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.contactInfo.education h4
+{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 13px;
+}
+.contactInfo.lang .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #868686;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.lang .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #222222;
+}
+
+
+.container .right-sider
+{
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+
+}
+.about
+{
+    margin-bottom: 50px;
+
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    font-weight: 500;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #000000;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+
+}
+.about .box .year_company
+{
+    min-width: 150px
+}
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 600;
+}
+.about .box .text h4
+{
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 16px;
+}
+
+.interest ul li
+{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa-solid
+{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    width: 20px;
+}
+
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(2,1fr); 
+    }
+}
+
+@media (max-width: 600px)
+{
+    .about .box
+    {
+        flex-direction: column;
+    }
+    .about .box .year_company
+    {
+        margin-bottom: 5px;
+    }
+    .interest ul 
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.child-page-listing h2{
+    font-weight: 500;
+    color: #000000;
+}
+img {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+  h2 {
+    margin-bottom: .5em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-gap: 1em;
+    margin-bottom: 3em;
+  }
+  
+
+  .page-listing {
+    position: relative;
+  }
+  
+  .page-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .page-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .page-title {
+    font-size: 1.5em;
+    -weight: boldfont;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .page-listing:hover .page-title {
+    opacity: 1;
+  }
+  
+  .page-listing:hover .page-image img {
+    filter: blur(2px);
+  }
+  
+  @media (hover: none) { 
+    .page-title {
+      opacity: 1;
+    }
+    .page-image img {
+      filter: blur(2px);
+    }
+  }
